@@ -1,0 +1,31 @@
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+header{
+	background-image: url('/header.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0% 132%;
+	background-size: cover;
+
+	h1{
+		font-family: 'Raleway', sans-serif;
+		height: 35rem;
+		background-color: rgba(255, 255, 255, 0.3);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		transition: 0.3s all;
+
+	&:hover{
+		background-color: rgba(255, 255, 255,0.2);
+	}
+	}
+}
+@media (min-width:1536px) {
+    .container{
+		max-width: 1280px;
+
+	}
+	
+}

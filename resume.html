@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ABOUT ZIHONG | Resume</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://unpkg.com/vue@3"></script>
+	<link rel="stylesheet" href="resume.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap"
+		rel="stylesheet" />
+	<Style>
+		.fade-enter-active {
+			transition: all 2s;
+		}
+	</Style>
+</head>
+
+<body>
+	<header>
+		<h1 class="text-white text-8xl pt-36 font-bold text-center">
+			林子紘
+			<br />
+			Hardy Lin
+		</h1>
+	</header>
+
+	<div class="container mx-auto mt-8">
+		<h2 class="border-l-[18px] py-1  border-amber-400 pl-4 text-2xl">About me</h2>
+		<div class="grid grid-cols-2 mt-10">
+			<div class="justify-center flex">
+				<img src="photo.jpg" class="w-2/4 rounded-lg border-4 h-fit" alt="" />
+			</div>
+			<div class="flex  flex-wrap content-around border-2 border-amber-400 rounded-md pl-8	">
+				<h3 class="w-full text-3xl font-bold">林子紘 Hardy Lin</h3>
+				<ul class="">
+					<li>
+						<img src="https://upload.wikimedia.org/wikipedia/zh/thumb/3/33/National_Chengchi_University_logo.svg/1200px-National_Chengchi_University_logo.svg.png"
+							class="w-12 inline text-xl my-1 mr-4" alt="" />
+						國立中山大學 資訊管理學系 碩士 2022/09 ~ 2024/06
+					</li>
+					<li>
+						<img src="https://upload.wikimedia.org/wikipedia/zh/thumb/2/29/National_Sun_Yat-sen_University_logo.svg/1200px-National_Sun_Yat-sen_University_logo.svg.png"
+							class="w-12 inline text-xl my-1 mr-4" alt="" />
+						國立中山大學 資訊管理學系 學士 2018/09 ~ 2022/06
+					</li>
+				</ul>
+				<p class="">
+					具有豐富的商業數據分析以及文字分析經驗，熟悉R、Python、SQL等語言
+					<br />
+					擔任新創團隊網頁工程師，負責建立平台並且利用Vue.js撰寫後台
+					<br />
+					在巨量資料分析課程以及深度學習課程具有機器學習以及深度學習建模經驗
+					<br />
+					目前正在修習資料視覺化課程學習D3.js應用之資料視覺化圖表
+					<br />
+					擔任系學會副會長、活動長，具有豐富的領導以及活動規劃經驗
+
+				</p>
+
+				<ul class="">
+					<li>✓ 擔任系學會副會長，熟悉統籌、決策處理以及凝聚團隊成員</li>
+					<li>✓ 擔任畢業專案組長，態度積極、想法多元</li>
+					<li>✓ 熟悉數據分析、資料視覺化、機器學習、深度學習等應用</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container mx-auto mt-8" id="vue">
+		<h2 class="border-l-[18px] py-1 border-amber-400 pl-4 text-2xl">Work Experience</h2>
+		<div class="mt-5 px-12 bg-gray-100 py-5 rounded-xl">
+			<div class="flex justify-between">
+				<p class="text-xl">中山GO - 網頁工程師
+					<span>Web Developer</span>
+				</p>
+				<p class="text-xl text-gray-600">
+					2021/02 ~ 2021/08
+				</p>
+			</div>
+
+			<p class="my-3 text-gray-500">中山GO為一新創團隊，團隊目標是建立一個群募和電商的平台連接校友與學生。團隊在6個月內完成開發客製化電商平台，在七月平台上線超過1000人以上註冊。
+				<br>開發內容包括Landing page、平台首頁、會員購物車、並且利用Vue.js開發平台後台
+			</p>
+			<ul class=" list-disc  pl-12">
+				<li class="mb-3">負責平台的開發與維護及內容更新</li>
+				<li class="mb-3">配合後端與設計進行前端頁面開發</li>
+				<li class="mb-3">優化網頁SEO與User Experience</li>
+				<li class="mb-3">利用Vue.js開發平台後台</li>
+			</ul>
+			<ul class="mr-auto flex justify-end">
+				<li v-for="tool in tools"
+					class="mx-3 rounded-full border px-4 py-1 text-sm border-cyan-500 text-cyan-700 hover:bg-cyan-500 hover:text-white cursor-default	">
+					{{ tool }}
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="container mx-auto mt-8" id="skill">
+		<h2 class="border-l-[18px] py-1 border-amber-400 pl-4 text-2xl">Skills and Experience</h2>
+		<div class="mt-5 ">
+			<div class="grid grid-cols-3 mx-5 gap-8">
+				<div v-for="skill in skills">
+					<p class="text-xl font-bold border-b-2 border-cyan-500 pb-2 mb-2">{{skill.title}}</p>
+					<ul class="list-disc ml-5">
+						<li v-for="item in skill.list " class="mb-2">{{item}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto mt-8">
+		<h2 class="border-l-[18px] py-1 border-amber-400 pl-4 text-2xl">Portfolio</h2>
+	</div>
+	<div id="portfolio">
+		<div class="flex justify-center  border-t-2 border-b-2 mt-8">
+			<ul class="flex justify-center my-4">
+				<li v-for="type,idx in types" class="px-6 text-lg">
+					<button
+						:class="[typesEnglish[idx].current ? 'bg-cyan-700 text-white' : 'text-gray-700 hover:bg-cyan-500 hover:text-white', 'block px-3 py-2 rounded-md ']"
+						@click="changeContent(typesEnglish[idx].name)">
+						<transition appear appear-active-class="fade-enter-active">{{type}} </transition>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<div class="container mx-auto">
+			<div v-for="item in filteredItems"
+				class=" grid grid-cols-3 bg-gray-100 mt-10 gap-8 py-8 px-14 hover:bg-gray-200 rounded-lg items-center transition-all duration-300	">
+				<div class="relative ">
+					<a v-if="item.link" :href="item.link" target="_blank" >
+						<div class="relative">
+							<img :src="'img/' +item.img" alt="" class=" rounded-lg  w-full  ">
+							<div class="flex justify-center items-center h-full w-full  text-white text-4xl rounded-lg  absolute top-0 left-0 opacity-0 bg-gray-500 hover:opacity-70 transition-all duration-300"> <span class="text-white ">點擊查看</span></div>
+						</div>
+
+					</a>
+					<p v-if="item.link" class="text-center mt-3 text-lg font-bold text-red-500">▲ 點擊圖片前往查看</p>
+					<img :src="'img/' +item.img" alt="" class=" rounded-lg  w-full  " v-else="">
+				</div>	
+
+				<div class="col-span-2">
+					<div class="flex justify-between">
+						<p class="text-2xl">{{item.title}}</p>
+						<p class="text-xl">{{item.time}}</p>
+					</div>
+					<p class="mt-5 text-lg text-gray-600">{{item.content}}</p>
+					<p class="mt-5">{{item.subtitle}}</p>
+					<ul class="list-disc ml-10">
+						<li v-for="special in item.list">{{special}}</li>
+					</ul>
+					<ul class="flex mt-5 justify-end">
+						<li class="mx-2 rounded-full border px-4 py-1 text-sm border-cyan-500 text-cyan-700 hover:bg-cyan-500 hover:text-white cursor-default	"
+							v-for="keyword in item.keyword">{{keyword}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="mt-40">
+		123
+	</div>
+
+	<script src="vue.js"></script>
+</body>
+
+</html>
