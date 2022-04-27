@@ -46,7 +46,7 @@ const skill = Vue.createApp({
           "Backend ：PHP",
           "Database：MySQL",
           "Web Clawer：Python",
-          "Deep learning:Pytorch",
+          "Deep Learning:Pytorch",
           "Version control:Git、Github"
         ]
       },
@@ -137,7 +137,7 @@ const portfolio = Vue.createApp({
           img: "analysis4.jpg",
           title: "Tafeng資料集資料分析及行銷計畫擬定",
           time: "2022/04",
-          content: "Tafeng為一賣場的銷售資料之資料集，內容包括顧客之銷售資料以及產品的銷售資料，並且透過分析這些資料，將顧客分群以及找出產品類型，進而擬定相對應的行銷策略，",
+          content: "Tafeng為一賣場的銷售資料之資料集，內容包括顧客之銷售資料以及產品的銷售資料，並且透過分析這些資料，將顧客分群以及找出產品類型，進而擬定相對應的行銷策略，並獲得期中競賽第三名",
           subtitle: "※ 專案特色：",
           list: ["將顧客利用RFM分類成不同客群", "將資料視覺化進行資料呈現", "找出特定族群購買特定產品比例最高的前十品類", "分析毛利最高的前十項產品顧客族群", "針對不同的客群設計相對應的行銷策略"],
           keyword: ["資料處理與分析", "K-means顧客分群", "RFM顧客模型", "資料視覺化"]
@@ -205,8 +205,8 @@ const portfolio = Vue.createApp({
           time: "2021/09~2022/01",
           content: "修習本校研究所課程深度學習，完成多項神經網路應用之實作",
           subtitle: "※ 應用包括：",
-          list: ["利用CNN進行圖片分類", "利用CNN結合RNN圖片轉文字", "將圖片轉文字應用加入Attention", "利用Bert進行twitter推文情緒分析", "利用GAN生成人臉"],
-          keyword: ["Pytorch", "Deep learning", "CNN", "RNN", "GAN", "Bert"]
+          list: ["利用CNN進行圖片分類", "利用CNN結合RNN將圖片轉文字", "將圖片轉文字應用加入Attention", "利用Bert進行twitter推文情緒分析", "利用GAN生成人臉"],
+          keyword: ["Pytorch", "Deep Learning", "CNN", "RNN", "GAN", "Bert"]
         },
         {
           type: "ML/DL",
@@ -217,7 +217,7 @@ const portfolio = Vue.createApp({
           content: "在深度學期期末實作風格轉移GAN之運用，BeautyGAN為風格轉移的應用之一，使用者輸入一上妝以及一素顏的照片能夠將其進行妝容交換",
           subtitle: "",
           list: "",
-          keyword: ["GAN", "人臉解析", "Deep learning"]
+          keyword: ["GAN", "人臉解析", "Deep Learning"]
         },
         {
           type: "activity",
