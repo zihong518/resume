@@ -8,7 +8,7 @@ const aboutMe = Vue.createApp({
 aboutMe.mount('#aboutMe')
 
 
-const app = Vue.createApp({
+const work = Vue.createApp({
   data() {
     return {
       tools: ['Bootstrap', 'SCSS', 'RWD','Javascript', 'Vue']
@@ -16,7 +16,7 @@ const app = Vue.createApp({
   }
 })
 
-app.mount('#vue')
+work.mount('#work')
 
 const skill = Vue.createApp({
   data() {
