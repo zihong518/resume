@@ -1,3 +1,12 @@
+const aboutMe = Vue.createApp({
+  data() {
+    return { 
+      keywords: ['Data Analysis','Data Visualization', 'Text Mining', 'Web Developing','Machine Learning', 'Deep Learning','Team Leadership','Event Planning']
+    }
+  }
+})
+aboutMe.mount('#aboutMe')
+
 
 const app = Vue.createApp({
   data() {
@@ -42,8 +51,9 @@ const skill = Vue.createApp({
         ]
       },
       {
-        title: 'Master course',
+        title: 'Taken Master course',
         list: [
+          "微學程：金融服務與金融科技微學程",
           "社群媒體分析",
           "商業數據分析",
           "資料視覺化",
@@ -148,7 +158,7 @@ const portfolio = Vue.createApp({
           link: "https://zihong518.github.io/NSYSU_GO/index.html",
           img: "web2.jpg",
           title: "中山GO",
-          time: "2021/3~2021/8",
+          time: "2021/03~2021/08",
           content: "中山GO為中山大學新創團隊，核心理念是結合電商與群募聯繫校友與在校生之情感，於7月營運時已突破1000人註冊，在團隊負責平台的開發、維護及內容更新，配合後端與設計進行前端頁面開發。",
           subtitle: "※ 使用工具：",
           list: ["Bootstrap", "RWD", "SCSS", "JavaScript", "Vue.js"],
@@ -160,7 +170,7 @@ const portfolio = Vue.createApp({
           img: "web3.jpg",
           title: "新生健檢查詢系統",
           time: "2021/07~2021/08",
-          content: "因應以往新生健檢流程繁雜並且以紙本處理以及人工登記為主。我主動提出將流程電子化，減少人力支出並且減少因人工登記造成資料出錯的機會，提高新生健檢整體效率",
+          content: "因應以往新生健檢流程繁雜並且以紙本處理以及人工登記為主。擔任衛保組工讀生主動提出將流程電子化，減少人力支出並且減少因人工登記造成資料出錯的機會，在今年達到零錯誤的成果",
           subtitle: "※ 系統特色：",
           list: ["利用google sheet配合google script作為簡易之資料庫", "搭配github page完成系統建置"],
           keyword: ["Google script", "API串接資料"]
@@ -226,7 +236,7 @@ const portfolio = Vue.createApp({
           img: "activity2.jpg",
           title: "中山大學資管週 - 總籌",
           time: "2020/09~2020/12",
-          content: "擔任為期一個禮拜的活動資管週總籌，共籌備了4個月，協調4個部門與15位幹部，並與4家贊助廠商洽談公關事宜，舉辦電玩大賽吸引超過250位同學參與，粉絲專頁觸及人數達18000千人",
+          content: "擔任為期一個禮拜的活動資管週總籌，共籌備了4個月，協調4個部門與15位幹部，並與4家贊助廠商洽談公關事宜，與Garena和acer合作舉辦電玩大賽吸引超過250位同學參與，粉絲專頁觸及人數達18000人",
           subtitle: "※ 關鍵指標：",
           list: ["協調4個部門與15位幹部", "與4家贊助廠商協調公關", "舉辦電玩大賽吸引250位以上同學"],
           keyword: ["活動規劃", "團隊領導", "公關洽談"]
