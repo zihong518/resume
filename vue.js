@@ -193,8 +193,8 @@ const portfolio = Vue.createApp({
           title: "高雄市房價預測",
           time: "2022/01",
           content: "利用Xgboost、線性回歸以及隨機森林進行高雄市房價的預測，並且加入街景圖片以及利用google api 抓取目標地址附近是否有餐廳、公園等資訊等外部變數",
-          subtitle: "※系統特色",
-          list: ["加入街景圖片向量變數","利用google api 抓取目的地附近資訊"],
+          subtitle: "※負責內容",
+          list: ["利用街景圖片預測房價","將模型加入街景圖片向量變數"],
           keyword: ["Xgboost", "隨機森林", "機器學習"]
         },
         {
