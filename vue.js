@@ -94,7 +94,7 @@ skill.mount('#skill')
 const portfolio = Vue.createApp({
   data() {
     return {
-      types: ['商業數據/文字分析', '前端開發', '機器學習/深度學習', '活動規劃'],
+      types: ['商業數據/文字分析', '前端開發|資料視覺化', '機器學習/深度學習', '活動規劃'],
       typesEnglish: [{ name: 'analysis', current: true }, { name: 'frontend', current: false }, { name: 'ML/DL', current: false }, { name: 'activity', current: false }],
       selectedType: "analysis",
       portfolioList: [
