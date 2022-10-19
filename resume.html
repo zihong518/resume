@@ -89,6 +89,26 @@
     </div>
     <div class="container mx-auto mt-8" id="work">
       <h2 class="border-l-[18px] py-1 border-amber-400 pl-4 text-2xl font-bold">Work Experience</h2>
+      <div class="mt-2 px-12 bg-gray-100 py-5 rounded-xl">
+        <div class="flex justify-between">
+          <p class="text-xl">
+            新光金控 - 數位科技實習生
+            <span>Digital Technology Intern</span>
+          </p>
+          <p class="text-xl text-gray-600">2022/07 ~ 2022/09</p>
+        </div>
+
+        <p class="my-3 text-gray-500">爬取PTT、App store、Google play等社群輿論資料，針對新光關鍵數位產品和服務利用資料視覺化建立輿論分析視覺化平台，協助行銷以及策略人員快速了解輿論變化以及進行行銷、App開發等決策。</p>
+        <ul class="list-disc pl-12">
+          <li class="mb-3">Backend : Flask</li>
+          <li class="mb-3">Frontend : Vue, D3.js</li>
+          <li class="mb-3">Database ：Azure cosmos DB(NoSQL)</li>
+          <li class="mb-3">Clawer ： Python( BeautifulSoup, Selenium )</li>
+        </ul>
+        <ul class="mr-auto flex justify-end">
+          <li v-for="tool in SKtools" class="mx-3 rounded-full border px-4 py-1 text-sm border-cyan-500 text-cyan-700 hover:bg-cyan-500 hover:text-white cursor-default">{{ tool }}</li>
+        </ul>
+      </div>
       <div class="mt-5 px-12 bg-gray-100 py-5 rounded-xl">
         <div class="flex justify-between">
           <p class="text-xl">
